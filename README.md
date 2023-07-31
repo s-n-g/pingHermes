@@ -45,7 +45,7 @@ The sources contain the followin third party libs:
 
 1. First of all fire up **Lazarus** with elevated rights. \
    If you are on Windows and you are not the administrator, run it as Administrator. \
-   If you are on any other platfrom, use `sudo lazarus`.
+   If you are on any other platfrom, use `sudo lazarus` (or `sudo lazarus-ide`, depending on your distro).
 2. Go to **Package** \ **Online Package Manager...**.
 3. Search for **rich**. \
    You will get a list of packages, check the one called **RichMemo** and the click on **Install**.
