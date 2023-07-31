@@ -36,7 +36,6 @@ pingHermes
 # These can be changed by user in Lazarus/project options.
 backup/
 *.bak
-lib/
 
 # Application bundle for Mac OS
 *.app/
