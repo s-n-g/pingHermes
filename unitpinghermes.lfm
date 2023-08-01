@@ -4413,10 +4413,4 @@ object Form1: TForm1
     Left = 459
     Top = 18
   end
-  object tmrDeleteLockFile: TTimer
-    Enabled = False
-    OnTimer = tmrDeleteLockFileTimer
-    Left = 24
-    Top = 88
-  end
 end

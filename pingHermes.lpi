@@ -18,8 +18,8 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="6"/>
-      <RevisionNr Value="1"/>
-      <BuildNr Value="100"/>
+      <RevisionNr Value="2"/>
+      <BuildNr Value="1"/>
       <StringTable Comments="Ping a computer and show the result" CompanyName="HASP" FileDescription="Ping a computer and show the result" InternalName="pingHermes.exe" LegalCopyright="2023, Spiros Georgaras &lt;sng@herllug.gr>" LegalTrademarks="2023, Spiros Georgaras &lt;sng@herllug.gr>" OriginalFilename="pingHermes.exe" ProductName="pingHermes" ProductVersion="0.6"/>
     </VersionInfo>
     <BuildModes>

@@ -39,7 +39,7 @@ begin
     Inc(i);
   end;
   RequireDerivedFormResource := True;
-  Application.Scaled := True;
+  Application.Scaled:=True;
   Application.Initialize;
   Application.ShowMainForm := False;
   Application.CreateForm(TForm1, Form1);       

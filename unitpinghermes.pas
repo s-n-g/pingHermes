@@ -72,7 +72,6 @@ type
     MenuItem6: TMenuItem;
     MenuItem9: TMenuItem;
     PopupMenu1: TPopupMenu;
-    tmrDeleteLockFile: TTimer;
     tmrMute: TTimer;
     tmrLock: TTimer;
     tmrConfirm: TTimer;
@@ -95,7 +94,6 @@ type
     procedure FormShow(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure tmrConfirmTimer(Sender: TObject);
-    procedure tmrDeleteLockFileTimer(Sender: TObject);
     procedure tmrLockTimer(Sender: TObject);
     procedure tmrMuteTimer(Sender: TObject);
     procedure toutMouseUp(Sender: TObject; Button: TMouseButton;
@@ -358,7 +356,8 @@ begin
     playThread := nil;
     SetCaptions;
   end;
-  tmrDeleteLockFile.Enabled := True;
+  DeleteFile(lockFile);
+  deleteLockFile := False;
   playsound.StopSound;
 end;
 
@@ -594,13 +593,6 @@ begin
   can_close := False;
   tmrConfirm.Enabled := False;
   ping;
-end;
-
-procedure TForm1.tmrDeleteLockFileTimer(Sender: TObject);
-begin
-  tmrDeleteLockFile.Enabled:=False;
-  DeleteFile(lockFile);
-  deleteLockFile := False;
 end;
 
 procedure TForm1.tmrLockTimer(Sender: TObject);
